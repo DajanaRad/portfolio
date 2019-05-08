@@ -7,7 +7,7 @@
 body {
   @include background;
   background-color: $main-color;
-  color: #fff;
+  color: $white-color;
   height: 100vh;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -57,7 +57,7 @@ h2 {
   }
 }
 a {
-  color: #fff;
+  color: $white-color;
   text-decoration: none;
 }
 

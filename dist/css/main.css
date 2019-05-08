@@ -1,22 +1,21 @@
 .nav-button {
   width: 2.5rem;
-  background: rgba(68, 68, 68, 0.9);
-  height: 2rem;
-  vertical-align: middle;
-  text-align: center;
-  margin-left: 0.3rem; }
+  position: fixed;
+  top: 0.5rem;
+  right: 0.5rem; }
 
 .menu-btn {
-  background: rgba(68, 68, 68, 0.9);
+  background: rgba(68, 68, 68, 0.1);
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all 0.5s ease-out; }
 
 .btn-line {
-  height: 0.2rem;
+  height: 3px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: black;
+  background: #fff;
   margin: 0.3rem;
   border-radius: 5px; }
 
