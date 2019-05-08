@@ -80,10 +80,7 @@ a {
     font-size: 1.5rem;
     font-weight: 600;
     text-transform: uppercase;
-
-    .nav-items {
-      margin-top: 1rem;
-    }
+    text-shadow: 3px 3px black;
   }
   &-nav {
     background-color: rgba(darken($main-color, 5), 0.5);
@@ -92,6 +89,17 @@ a {
     @include ease-out;
     &.show {
       transform: translate3d(0, 0, 0);
+    }
+    .nav-items {
+      margin-top: 1rem;
+      transform: translate3d(37rem, 0, 0);
+      @include ease-out;
+      &.show {
+        transform: translate3d(0, 0, 0);
+      }
+      &.current {
+        color: $main-color;
+      }
     }
   }
   &-photo {
@@ -111,18 +119,11 @@ a {
       background: url("../dist/img/background.jpg");
     }
   }
-  .nav-items {
-    transform: translate3d(37rem, 0, 0);
-    @include ease-out;
-    &.show {
-      transform: translate3d(0, 0, 0);
-    }
-  }
 }
 
 //delay each item for 0.1s
 @for $i from 1 through 4 {
   .nav-items:nth-child(#{$i}) {
-    transition: $i * 0.1s;
+    transition: $i * 0.3s;
   }
 }
