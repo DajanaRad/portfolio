@@ -9,15 +9,24 @@
   background: rgba($main-color, 0.1);
   border: none;
   @include ease-out();
+
+  .btn-line {
+    height: 3px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: $white-color;
+    margin: 0.3rem;
+    border-radius: 5px;
+  }
+  &.close {
+    transform: rotate(180deg);
+  }
 }
-.btn-line {
-  height: 3px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background: $white-color;
-  margin: 0.3rem;
-  border-radius: 5px;
+
+//rotate into X
+
+.show {
 }
 .menu {
   display: none;

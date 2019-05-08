@@ -9,15 +9,16 @@
   background: rgba(68, 68, 68, 0.1);
   border: none;
   transition: all 0.5s ease-out; }
-
-.btn-line {
-  height: 3px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background: #fff;
-  margin: 0.3rem;
-  border-radius: 5px; }
+  .menu-btn .btn-line {
+    height: 3px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #fff;
+    margin: 0.3rem;
+    border-radius: 5px; }
+  .menu-btn.close {
+    transform: rotate(180deg); }
 
 .menu {
   display: none; }
@@ -97,4 +98,5 @@ h2 {
     margin: 0 auto;
     padding: 0; }
   .text {
-    margin: 0 auto; } }
+    margin: 0 auto;
+    width: 90vw; } }
