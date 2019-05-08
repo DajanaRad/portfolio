@@ -18,16 +18,14 @@
     background: $white-color;
     margin: 0.3rem;
     border-radius: 5px;
+    @include ease-out();
   }
+  //rotate into X
   &.close {
     transform: rotate(180deg);
   }
 }
 
-//rotate into X
-
-.show {
-}
 .menu {
   display: none;
 }
