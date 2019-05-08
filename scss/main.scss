@@ -58,9 +58,17 @@ h2 {
   color: $secondary-color;
 }
 
-@media (max-width: 45rem) {
-  lg-heading {
-    font-size: 3rem;
-    line-height: 3rem;
+@media (max-width: 42rem) {
+  h1.lg-heading {
+    font-size: 5rem;
+    line-height: 4rem;
+  }
+  main#home {
+    margin: 0 auto;
+    padding: 0;
+  }
+  .text {
+    margin: 0 auto;
+    width: 90vw;
   }
 }
