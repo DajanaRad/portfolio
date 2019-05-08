@@ -2,12 +2,12 @@
   width: 2.5rem;
   position: fixed;
   top: 0.5rem;
-  right: 0.5rem; }
+  right: 0.5rem;
+  cursor: pointer; }
 
 .menu-btn {
   background: rgba(68, 68, 68, 0.1);
   border: none;
-  cursor: pointer;
   transition: all 0.5s ease-out; }
 
 .btn-line {
@@ -18,6 +18,17 @@
   background: #fff;
   margin: 0.3rem;
   border-radius: 5px; }
+
+.menu {
+  display: none; }
+
+.nav-items {
+  list-style: none; }
+
+a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer; }
 
 * {
   box-sizing: border-box; }
@@ -49,9 +60,9 @@ header {
 
 main {
   padding: 4rem;
-  height: 100vh;
   z-index: 2;
-  position: relative; }
+  position: relative;
+  top: 9.3rem; }
   main .icons a {
     display: inline-block;
     padding: 0.4rem; }
@@ -59,10 +70,7 @@ main {
       color: #eece1a;
       transition: all 0.5s ease-out; }
   main#home {
-    height: auto;
     overflow: hidden; }
-    main#home h1 {
-      margin-top: 20vh; }
 
 h1,
 h2 {
@@ -70,16 +78,12 @@ h2 {
   h1.lg-heading,
   h2.lg-heading {
     font-size: 6rem;
-    line-height: 5rem;
-    margin-bottom: 2rem; }
+    line-height: 5.4rem;
+    margin: 0 0 2rem 0; }
   h1.sm-heading,
   h2.sm-heading {
-    margin-bottom: 2rem;
-    padding: 0.2rem 1rem; }
-
-a {
-  color: #fff;
-  text-decoration: none; }
+    margin: 0;
+    padding-bottom: 1rem; }
 
 .last-name {
   color: #eece1a; }

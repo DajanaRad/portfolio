@@ -7,9 +7,8 @@ let menuNavItems = document.querySelectorAll(".nav-items");
 //set initial state of menu
 let showMenu = false;
 
-menuHamburger.addEventListener("click", toggleMenu);
-
-function toggleMenu() {
+function toggleMenu(e) {
+  e.preventDefault();
   if (!showMenu) {
     menuHamburger.classList.add("close");
     menuMani.classList.add("show");
@@ -28,3 +27,5 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+menuHamburger.addEventListener("click", toggleMenu);

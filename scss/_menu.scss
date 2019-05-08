@@ -3,11 +3,11 @@
   position: fixed;
   top: 0.5rem;
   right: 0.5rem;
+  cursor: pointer;
 }
 .menu-btn {
   background: rgba($main-color, 0.1);
   border: none;
-  cursor: pointer;
   @include ease-out();
 }
 .btn-line {
@@ -18,4 +18,21 @@
   background: $white-color;
   margin: 0.3rem;
   border-radius: 5px;
+}
+
+.close {
+}
+
+.show {
+}
+.menu {
+  display: none;
+}
+.nav-items {
+  list-style: none;
+}
+a {
+  color: $white-color;
+  text-decoration: none;
+  cursor: pointer;
 }
