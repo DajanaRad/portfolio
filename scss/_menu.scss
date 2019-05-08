@@ -44,9 +44,7 @@
     }
   }
 }
-.menu {
-  display: none;
-}
+
 .nav-items {
   list-style: none;
 }
@@ -54,4 +52,30 @@ a {
   color: $white-color;
   text-decoration: none;
   cursor: pointer;
+}
+
+//menu overlay
+.menu {
+  visibility: hidden;
+  height: 100vh;
+  z-index: 10;
+
+  &.show {
+    visibility: visible;
+  }
+  &-photo,
+  &-nav {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    z-index: 10;
+  }
 }

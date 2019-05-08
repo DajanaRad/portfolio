@@ -1,8 +1,11 @@
+import { NONAME } from "dns";
+
 const menuHamburger = document.querySelector(".nav-button");
 const menuMani = document.querySelector(".menu");
 const menuPhoto = document.querySelector(".menu-photo");
 const menuNav = document.querySelector(".menu-nav");
 let menuNavItems = document.querySelectorAll(".nav-items");
+const main = document.querySelector("#home");
 
 //set initial state of menu
 let showMenu = false;
@@ -15,6 +18,7 @@ function toggleMenu(e) {
     menuNav.classList.add("show");
     menuPhoto.classList.add("show");
     menuNavItems.forEach(item => item.classList.add("show"));
+    main.style = "display:none";
 
     //set menu state
     showMenu = true;
@@ -24,6 +28,7 @@ function toggleMenu(e) {
     menuNav.classList.remove("show");
     menuPhoto.classList.remove("show");
     menuNavItems.forEach(item => item.classList.remove("show"));
+    main.style = "display:block";
     showMenu = false;
   }
 }
