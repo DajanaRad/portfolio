@@ -4,6 +4,7 @@
   top: 0.8rem;
   right: 0.8rem;
   cursor: pointer;
+  z-index: 10;
 }
 .menu-btn {
   background: rgba($main-color, 0.1);
@@ -75,7 +76,7 @@ a {
     overflow: hidden;
     margin: 0;
     padding: 0;
-    z-index: 10;
+    z-index: 5;
     font-size: 1.5rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -83,13 +84,45 @@ a {
     .nav-items {
       margin-top: 1rem;
     }
-    &-nav {
-      background-color: $main-color;
-      transform: translate3d(0, -100%, 0);
-      @include ease-out;
-      &.show {
-        transform: translate3D;
-      }
+  }
+  &-nav {
+    background-color: rgba(darken($main-color, 5), 0.5);
+    transform: translate3d(0, -100%, 0);
+    border-left: 1px solid rgba($main-color, 0.9);
+    @include ease-out;
+    &.show {
+      transform: translate3d(0, 0, 0);
     }
+  }
+  &-photo {
+    background-color: rgba(lighten($main-color, 5), 0.5);
+    border-right: 1px solid rgba($main-color, 0.9);
+    transform: translate3d(0, 100%, 0);
+    @include ease-out;
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+    & img {
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      font-size: 1rem;
+      border: 3px solid $secondary-color;
+      background: url("../dist/img/background.jpg");
+    }
+  }
+  .nav-items {
+    transform: translate3d(37rem, 0, 0);
+    @include ease-out;
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
+//delay each item for 0.1s
+@for $i from 1 through 4 {
+  .nav-items:nth-child(#{$i}) {
+    transition: $i * 0.1s;
   }
 }
