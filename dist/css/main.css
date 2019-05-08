@@ -103,13 +103,14 @@ h2 {
 .last-name {
   color: #eece1a; }
 
-@media (max-width: 42rem) {
+@media (max-width: 40rem) {
   h1.lg-heading {
     font-size: 5rem;
     line-height: 4rem; }
-  main#home {
-    margin: 0 auto;
-    padding: 0; }
   .text {
     display: inline-block;
-    width: 90vw; } }
+    width: 80vw; } }
+
+@media (max-width: 34rem) {
+  #home {
+    padding-left: 1rem; } }
