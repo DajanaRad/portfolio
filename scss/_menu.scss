@@ -78,12 +78,18 @@ a {
     z-index: 10;
     font-size: 1.5rem;
     font-weight: 600;
+    text-transform: uppercase;
 
     .nav-items {
       margin-top: 1rem;
     }
     &-nav {
-      background: #444;
+      background-color: $main-color;
+      transform: translate3d(0, -100%, 0);
+      @include ease-out;
+      &.show {
+        transform: translate3D;
+      }
     }
   }
 }

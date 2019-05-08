@@ -60,11 +60,16 @@ a {
     padding: 0;
     z-index: 10;
     font-size: 1.5rem;
-    font-weight: 600; }
+    font-weight: 600;
+    text-transform: uppercase; }
     .menu-photo .nav-items, .menu-nav .nav-items {
       margin-top: 1rem; }
     .menu-photo-nav, .menu-nav-nav {
-      background: #444; }
+      background-color: #444;
+      transform: translate3d(0, -100%, 0);
+      transition: all 0.5s ease-out; }
+      .menu-photo-nav.show, .menu-nav-nav.show {
+        transform: translate3D; }
 
 * {
   box-sizing: border-box; }
