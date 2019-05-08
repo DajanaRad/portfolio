@@ -79,11 +79,11 @@ h2 {
   h2.lg-heading {
     font-size: 6rem;
     line-height: 5.4rem;
-    margin: 0 0 2rem 0; }
+    margin: 0 0 1.3rem 0; }
   h1.sm-heading,
   h2.sm-heading {
     margin: 0;
-    padding-bottom: 1rem; }
+    padding-bottom: 1.5rem; }
 
 .last-name {
   color: #eece1a; }
