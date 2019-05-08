@@ -1,3 +1,25 @@
+.nav-button {
+  width: 2.5rem;
+  background: rgba(68, 68, 68, 0.9);
+  height: 2rem;
+  vertical-align: middle;
+  text-align: center;
+  margin-left: 0.3rem; }
+
+.menu-btn {
+  background: rgba(68, 68, 68, 0.9);
+  border: none;
+  cursor: pointer; }
+
+.btn-line {
+  height: 0.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: black;
+  margin: 0.3rem;
+  border-radius: 5px; }
+
 * {
   box-sizing: border-box; }
 
