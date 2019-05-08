@@ -5,7 +5,7 @@
 }
 
 body {
-  max-width: 85rem;
+  max-width: 70rem;
   @include background;
   background-color: $main-color;
   color: $white-color;
@@ -68,7 +68,7 @@ h2 {
     padding: 0;
   }
   .text {
-    margin: 0 auto;
+    display: inline-block;
     width: 90vw;
   }
 }

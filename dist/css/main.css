@@ -18,8 +18,20 @@
     margin: 0.3rem;
     border-radius: 5px;
     transition: all 0.5s ease-out; }
-  .menu-btn.close {
-    transform: rotate(180deg); }
+
+.close {
+  transform: rotate(180deg);
+  transition: all 0.5s ease-out; }
+  .close .btn-line {
+    height: 3px; }
+    .close .btn-line:nth-child(1) {
+      transform: rotate(45deg) translate(10px);
+      transition: all 0.5s ease-out; }
+    .close .btn-line:nth-child(2) {
+      opacity: 0; }
+    .close .btn-line:nth-child(3) {
+      transform: rotate(310deg) translate(11px);
+      transition: all 0.5s ease-out; }
 
 .menu {
   display: none; }
@@ -36,7 +48,7 @@ a {
   box-sizing: border-box; }
 
 body {
-  max-width: 85rem;
+  max-width: 70rem;
   background-color: #444;
   color: #fff;
   height: 100vh;
@@ -99,5 +111,5 @@ h2 {
     margin: 0 auto;
     padding: 0; }
   .text {
-    margin: 0 auto;
+    display: inline-block;
     width: 90vw; } }
