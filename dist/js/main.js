@@ -1,5 +1,3 @@
-import { NONAME } from "dns";
-
 const menuHamburger = document.querySelector(".nav-button");
 const menuMani = document.querySelector(".menu");
 const menuPhoto = document.querySelector(".menu-photo");

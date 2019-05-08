@@ -59,6 +59,7 @@ a {
   visibility: hidden;
   height: 100vh;
   z-index: 10;
+  background-color: $home-image;
 
   &.show {
     visibility: visible;
@@ -75,7 +76,7 @@ a {
     overflow: hidden;
     margin: 0;
     padding: 0;
-    background-color: black;
+
     z-index: 10;
   }
 }
