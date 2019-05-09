@@ -58,6 +58,18 @@ h2 {
   color: $secondary-color;
 }
 
+//_menu content
+
+.nav-items {
+  list-style: none;
+  .nav-link {
+    // color: $white-color;
+    background: set-text-color($main-color);
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
 // responsivnes
 
 @media (max-width: 40rem) {

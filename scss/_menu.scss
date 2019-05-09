@@ -47,16 +47,6 @@
   }
 }
 
-.nav-items {
-  list-style: none;
-  .nav-link {
-    // color: $white-color;
-    color: set-text-color($main-color);
-    text-decoration: none;
-    cursor: pointer;
-  }
-}
-
 //menu overlay
 .menu {
   visibility: hidden;
@@ -128,20 +118,10 @@
   }
 }
 
-//delay each item for 0.1s
+//delay each item for 0.2s
 
 @for $i from 1 through 4 {
   .nav-items:nth-child(#{$i}) {
-    transition: $i * 0.3s;
-  }
-}
-
-//set color depending od the darknes
-
-@function set-text-color($color) {
-  @if (lightness($color) > 40) {
-    @return $color = #000;
-  } @else {
-    @return $color = #fff;
+    transition-delay: $i * 0.2s;
   }
 }

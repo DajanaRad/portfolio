@@ -28,3 +28,13 @@ $white-color: #fff;
     }
   }
 }
+
+//set color depending od the darknes
+
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return $color = #000;
+  } @else {
+    @return $color = #fff;
+  }
+}
