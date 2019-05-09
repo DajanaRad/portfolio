@@ -10,7 +10,7 @@ body {
   background-color: $main-color;
   color: $white-color;
   height: 100vh;
-  margin: 0 auto;
+  margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5rem;
 }
@@ -82,8 +82,7 @@ h2 {
   div.text {
     width: 100vw;
   }
-  //menu responsivnes
-  ul.menu-nav,
+  menu responsivnes ul.menu-nav,
   div.menu-photo {
     float: none;
     z-index: 10;
