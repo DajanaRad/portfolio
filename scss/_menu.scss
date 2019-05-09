@@ -11,8 +11,8 @@
 .nav-items {
   list-style: none;
   .nav-link {
-    // color: $white-color;
-    color: set-text-color($main-color);
+    color: $white-color;
+    // color: set-text-color($main-color);
     text-decoration: none;
     cursor: pointer;
   }

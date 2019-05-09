@@ -3,7 +3,7 @@ const menuMani = document.querySelector(".menu");
 const menuPhoto = document.querySelector(".menu-photo");
 const menuNav = document.querySelector(".menu-nav");
 let menuNavItems = document.querySelectorAll(".nav-items");
-const main = document.querySelector("#home");
+const main = document.querySelector(".js-staff");
 
 //set initial state of menu
 let showMenu = false;
