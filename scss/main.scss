@@ -8,7 +8,7 @@ body {
   max-width: 70rem;
   @include background;
   background-color: $main-color;
-  color: $white-color;
+  color: set-text-color($main-color);
   height: 100vh;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -82,7 +82,10 @@ h2 {
   div.text {
     width: 100vw;
   }
-  menu responsivnes ul.menu-nav,
+
+  //resposivnes of menu
+
+  ul.menu-nav,
   div.menu-photo {
     float: none;
     z-index: 10;
@@ -101,16 +104,20 @@ h2 {
 
     .nav-items {
       text-align: center;
+      margin-top: 2rem;
     }
   }
   .menu-photo {
     display: block;
     height: 30vh;
     transform: translate3d(100%, 0, 0);
-    display: block;
-    background-color: rgba(81, 81, 81, 0.5);
-    border-right: 1px solid rgba(68, 68, 68, 0.9);
-    transition: all 0.5s ease-out 0s;
+    text-align: center;
+    & img {
+      width: 150px;
+      height: 150px;
+      display: inline-block;
+      margin: 2rem;
+    }
   }
 }
 
