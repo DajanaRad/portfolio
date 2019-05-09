@@ -35,6 +35,7 @@
   list-style: none; }
   .nav-items .nav-link {
     color: #fff;
+    color: set-text-color(#444);
     text-decoration: none;
     cursor: pointer; }
 
