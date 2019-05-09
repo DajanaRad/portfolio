@@ -7,6 +7,16 @@
   cursor: pointer;
   z-index: 10;
 }
+
+.nav-items {
+  list-style: none;
+  .nav-link {
+    // color: $white-color;
+    color: set-text-color($main-color);
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
 .menu-btn {
   background: rgba($main-color, 0.1);
   border: none;

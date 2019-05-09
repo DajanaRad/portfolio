@@ -6,6 +6,13 @@
   cursor: pointer;
   z-index: 10; }
 
+.nav-items {
+  list-style: none; }
+  .nav-items .nav-link {
+    color: #444=#fff;
+    text-decoration: none;
+    cursor: pointer; }
+
 .menu-btn {
   background: rgba(68, 68, 68, 0.1);
   border: none; }
@@ -156,13 +163,6 @@ h2 {
 
 .last-name {
   color: #eece1a; }
-
-.nav-items {
-  list-style: none; }
-  .nav-items .nav-link {
-    background: #444=#fff;
-    text-decoration: none;
-    cursor: pointer; }
 
 @media (max-width: 40rem) {
   h1.lg-heading {

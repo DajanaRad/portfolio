@@ -7,7 +7,7 @@ body {
   max-width: 70rem;
   @include background;
   background-color: $main-color;
-  //color: set-text-color($main-color);
+  // color: set-text-color($main-color);
   color: $white-color;
   height: 100vh;
   margin: 0;
@@ -56,18 +56,6 @@ h2 {
 
 .last-name {
   color: $secondary-color;
-}
-
-//_menu content
-
-.nav-items {
-  list-style: none;
-  .nav-link {
-    // color: $white-color;
-    background: set-text-color($main-color);
-    text-decoration: none;
-    cursor: pointer;
-  }
 }
 
 // responsivnes
