@@ -28,3 +28,21 @@ $white-color: #fff;
     }
   }
 }
+
+//delay each item for 0.1s
+
+@for $i from 1 through 4 {
+  .nav-items:nth-child(#{$i}) {
+    transition: $i * 0.3s;
+  }
+}
+
+//set color depending od the darknes
+
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return $color = #000;
+  } @else {
+    @return $color = #fff;
+  }
+}

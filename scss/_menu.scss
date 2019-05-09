@@ -1,3 +1,4 @@
+@import "config";
 .nav-button {
   width: 2.5rem;
   position: fixed;
@@ -49,7 +50,7 @@
 .nav-items {
   list-style: none;
   .nav-link {
-    color: $white-color;
+    // color: $white-color;
     color: set-text-color($main-color);
     text-decoration: none;
     cursor: pointer;
@@ -124,22 +125,5 @@
     &.show {
       transform: translate3d(0, 0, 0);
     }
-  }
-}
-
-//delay each item for 0.1s
-
-@for $i from 1 through 4 {
-  .nav-items:nth-child(#{$i}) {
-    transition: $i * 0.3s;
-  }
-}
-
-//set color depending od the darknes
-@function set-text-color($color) {
-  @if (lightness($color) > 40) {
-    @return $color = #000;
-  } @else {
-    @return $color = #fff;
   }
 }
