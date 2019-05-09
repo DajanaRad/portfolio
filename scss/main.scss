@@ -1,6 +1,5 @@
 @import "config";
 @import "menu";
-@import "mobile";
 * {
   box-sizing: border-box;
 }
@@ -17,7 +16,7 @@ body {
 }
 header {
   position: fixed;
-  z-index: 10;
+  z-index: 2;
   width: 100vw;
 }
 main {
@@ -57,4 +56,46 @@ h2 {
 
 .last-name {
   color: $secondary-color;
+}
+@media (max-width: 40rem) {
+  h1.lg-heading {
+    font-size: 5rem;
+    line-height: 4rem;
+  }
+  .text {
+    display: inline-block;
+    width: 80vw;
+  }
+}
+
+@media (max-width: 32rem) {
+  h1.lg-heading {
+    font-size: 4.5rem;
+    line-height: 4rem;
+    margin-bottom: 1rem;
+  }
+  main#home {
+    padding: 0;
+    top: 12rem;
+    text-align: center;
+  }
+  div.text {
+    width: 100vw;
+  }
+  //menu responsivnes
+  ul.menu-nav,
+  div.menu-photo {
+    float: none;
+  }
+}
+
+@media (max-width: 28rem) {
+  h1.lg-heading {
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-bottom: 0.2rem;
+  }
+  .sm-heading {
+    font-size: 1rem;
+  }
 }
