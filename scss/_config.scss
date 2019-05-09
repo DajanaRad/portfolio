@@ -32,8 +32,7 @@ $white-color: #fff;
 @function set-text-color($color) {
   @if (lightness($color) > 40) {
     @return $color = #000;
-  }
-  else {
+  } @else {
     @return $color = #fff;
   }
 }

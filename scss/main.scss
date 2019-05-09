@@ -57,6 +57,9 @@ h2 {
 .last-name {
   color: $secondary-color;
 }
+
+// responsivnes
+
 @media (max-width: 40rem) {
   h1.lg-heading {
     font-size: 5rem;
