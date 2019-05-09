@@ -8,8 +8,7 @@
 
 .menu-btn {
   background: rgba(68, 68, 68, 0.1);
-  border: none;
-  transition: all 0.5s ease-out; }
+  border: none; }
   .menu-btn .btn-line {
     height: 3px;
     display: flex;
@@ -26,13 +25,11 @@
   .close .btn-line {
     height: 3px; }
     .close .btn-line:nth-child(1) {
-      transform: rotate(45deg) translate(10px);
-      transition: all 0.5s ease-out; }
+      transform: rotate(45deg) translate(10px); }
     .close .btn-line:nth-child(2) {
       opacity: 0; }
     .close .btn-line:nth-child(3) {
-      transform: rotate(310deg) translate(11px);
-      transition: all 0.5s ease-out; }
+      transform: rotate(310deg) translate(11px); }
 
 .nav-items {
   list-style: none; }
