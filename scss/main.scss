@@ -94,23 +94,21 @@ h2 {
     }
   }
   .menu-nav {
+    display: block;
     height: 70vh;
     transform: translate3d(-100%, 0, 0);
     font-size: 1.8rem;
-  }
-  .menu-photo img {
-    height: 30vh;
-    transform: translate3d(50%, 0, 0);
-    position: absolute;
-    top: 0;
-    left: 2rem;
-    border-radius: 50%;
-    font-size: 1rem;
-    border: 3px solid $secondary-color;
-    background: url("");
-    .nav-itmes {
+    line-height: 2.5rem;
+
+    .nav-items {
       text-align: center;
     }
+  }
+  .menu-photo {
+    display: block;
+    height: 30vh;
+    transform: translate3d(100%, 0, 0);
+    display: block;
   }
 }
 
