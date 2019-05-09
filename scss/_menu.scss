@@ -110,9 +110,7 @@ a {
     border-right: 1px solid rgba($main-color, 0.9);
     transform: translate3d(0, 100%, 0);
     @include ease-out;
-    &.show {
-      transform: translate3d(0, 0, 0);
-    }
+
     & img {
       height: 200px;
       width: 200px;
@@ -120,6 +118,9 @@ a {
       font-size: 1rem;
       border: 3px solid $secondary-color;
       background: url("");
+    }
+    &.show {
+      transform: translate3d(0, 0, 0);
     }
   }
 }
