@@ -4,6 +4,7 @@ const menuPhoto = document.querySelector(".menu-photo");
 const menuNav = document.querySelector(".menu-nav");
 let menuNavItems = document.querySelectorAll(".nav-items");
 const main = document.querySelector(".js-staff");
+const footer = document.querySelector("#main-footer");
 
 //set initial state of menu
 let showMenu = false;
@@ -17,7 +18,7 @@ function toggleMenu(e) {
     menuPhoto.classList.add("show");
     menuNavItems.forEach(item => item.classList.add("show"));
     main.style = "display:none";
-
+    footer.style = "display:none";
     //set menu state
     showMenu = true;
   } else {
@@ -27,6 +28,7 @@ function toggleMenu(e) {
     menuPhoto.classList.remove("show");
     menuNavItems.forEach(item => item.classList.remove("show"));
     main.style = "display:block";
+    footer.style = "display:block";
     showMenu = false;
   }
 }
