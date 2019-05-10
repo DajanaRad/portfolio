@@ -61,17 +61,16 @@ h2 {
 //ABOUT PAGE
 #about {
   left: 1rem;
-  margin-right: 0.8rem;
-  display: inline-block;
+  margin: 0;
   z-index: 8;
-  width: 98vw;
+  width: 95vw;
+  height: 90vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  overflow: hidden;
 }
 .grid-conteiner {
   grid-gap: 2rem;
   display: grid;
-  grid-template-columns: repeat(3, 30vw);
+  grid-template-columns: repeat(3, 28vw);
   grid-template-rows: 30vh 40vh;
   grid-template-areas:
     "img bio bio"
@@ -81,7 +80,7 @@ h2 {
   grid-area: img;
 
   img {
-    width: 200px;
+    width: 180px;
     height: 200px;
   }
 }
@@ -90,6 +89,7 @@ h2 {
   background-color: rgba($main-color, 0.4);
   h3 {
     text-transform: capitalize;
+    margin-top: 0;
   }
 }
 .bio {
@@ -112,7 +112,7 @@ h2 {
 #main-footer {
   color: set-text-color($main-color);
   text-align: center;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100vw;
   height: 2rem;
@@ -128,6 +128,13 @@ h2 {
   .text {
     display: inline-block;
     width: 80vw;
+  }
+
+  // about page
+  .grid-conteiner {
+    display: flex;
+    flex-direction: column;
+    width: 90vh;
   }
 }
 
