@@ -7,8 +7,7 @@ body {
   max-width: 70rem;
   @include background;
   background-color: $main-color;
-  // color: set-text-color($main-color);
-  color: $white-color;
+  color: set-text-color($main-color);
   height: 100vh;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
