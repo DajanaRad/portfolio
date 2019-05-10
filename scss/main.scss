@@ -16,14 +16,13 @@ body {
 }
 header {
   position: fixed;
-  z-index: 2;
+  z-index: 9;
   width: 100vw;
 }
 main {
-  padding: 4rem;
-  z-index: 2;
+  z-index: 10;
   position: relative;
-  top: 9.3rem;
+
   .icons {
     a {
       display: inline-block;
@@ -36,6 +35,8 @@ main {
   }
   &#home {
     overflow: hidden;
+    top: 9.3rem;
+    padding: 4rem;
   }
 }
 h1,
@@ -45,7 +46,7 @@ h2 {
   &.lg-heading {
     font-size: 6rem;
     line-height: 5.4rem;
-    margin: 0 0 1.3rem 0;
+    margin: 0 0 0.5rem 0;
   }
 
   &.sm-heading {
@@ -58,7 +59,15 @@ h2 {
   color: $secondary-color;
 }
 
-// responsivnes
+//ABOUT PAGE
+#about {
+  left: 1rem;
+  margin: 0;
+  display: inline-block;
+  z-index: 8;
+  width: 100vw;
+}
+// RESPONSIVNES
 
 @media (max-width: 40rem) {
   h1.lg-heading {
