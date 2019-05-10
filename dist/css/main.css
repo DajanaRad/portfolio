@@ -183,15 +183,20 @@ h2 {
 .my-img {
   grid-area: img; }
   .my-img img {
-    width: 180px;
-    height: 200px; }
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    font-size: 1rem;
+    border: 3px solid #eece1a;
+    display: inline-block; }
 
 .descrip {
   border-bottom: 2px solid #eece1a;
   background-color: rgba(68, 68, 68, 0.4); }
   .descrip h3 {
     text-transform: capitalize;
-    margin-top: 0; }
+    margin-top: 0.3rem;
+    text-align: center; }
 
 .bio {
   grid-area: bio;
@@ -228,11 +233,10 @@ h2 {
   .bio {
     text-align: center; }
   .my-img {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    font-size: 1rem;
-    border: 3px solid #eece1a; }
+    margin: 0 auto; }
+    .my-img img {
+      width: 300px;
+      height: 300px; }
   .grid-conteiner {
     display: flex;
     flex-direction: column; }
