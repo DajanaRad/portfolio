@@ -9,18 +9,18 @@
 .nav-items {
   list-style: none; }
   .nav-items .nav-link {
-    color: #000;
+    color: #fff;
     text-decoration: none;
     cursor: pointer; }
 
 .menu-btn {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(68, 68, 68, 0.1);
   border: none; }
   .menu-btn .btn-line {
     height: 3px;
     display: flex;
     background: #fff;
-    background: #000;
+    background: #fff;
     text-decoration: none;
     cursor: pointer;
     margin: 0.3rem;
@@ -61,11 +61,11 @@
     font-size: 1.5rem;
     font-weight: 600;
     text-transform: uppercase;
-    text-shadow: 3px 3px #fff; }
+    text-shadow: 3px 3px #000; }
   .menu-nav {
-    background-color: rgba(242, 242, 242, 0.5);
+    background-color: rgba(55, 55, 55, 0.5);
     transform: translate3d(0, -100%, 0);
-    border-left: 1px solid rgba(255, 255, 255, 0.9);
+    border-left: 1px solid rgba(68, 68, 68, 0.9);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
@@ -80,8 +80,8 @@
       .menu-nav .nav-items .current {
         color: #eece1a; }
   .menu-photo {
-    background-color: rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.9);
+    background-color: rgba(81, 81, 81, 0.5);
+    border-right: 1px solid rgba(68, 68, 68, 0.9);
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-photo img {
@@ -111,8 +111,8 @@
 
 body {
   max-width: 70rem;
-  background-color: #fff;
-  color: #000;
+  background-color: #444;
+  color: #fff;
   height: 100vh;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -128,7 +128,7 @@ body {
       right: 0;
       width: 100vw;
       height: 100vh;
-      background: rgba(255, 255, 255, 0.9); }
+      background: rgba(68, 68, 68, 0.9); }
 
 header {
   position: fixed;
@@ -192,7 +192,7 @@ h2 {
 
 .descrip {
   border-bottom: 2px solid #eece1a;
-  background-color: rgba(255, 255, 255, 0.4); }
+  background-color: rgba(68, 68, 68, 0.4); }
   .descrip h3 {
     text-transform: capitalize;
     margin-top: 0.3rem;
@@ -215,7 +215,7 @@ h2 {
   grid-area: third; }
 
 #main-footer {
-  color: #000;
+  color: #fff;
   text-align: center;
   position: relative;
   bottom: 0;
@@ -239,7 +239,8 @@ h2 {
       height: 300px; }
   .grid-conteiner {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    margin: 0 auto; }
   .descrip {
     margin: 2rem 0; } }
 
