@@ -45,7 +45,7 @@ h2 {
   &.lg-heading {
     font-size: 6rem;
     line-height: 5.4rem;
-    margin: 0 0 0.5rem 0;
+    margin: 0 0 1rem 0;
   }
 
   &.sm-heading {
@@ -61,16 +61,18 @@ h2 {
 //ABOUT PAGE
 #about {
   left: 1rem;
-  margin: 0;
+  margin-right: 0.8rem;
   display: inline-block;
   z-index: 8;
   width: 98vw;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
 }
 .grid-conteiner {
   grid-gap: 2rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 40vh 30vh;
+  grid-template-columns: repeat(3, 30vw);
+  grid-template-rows: 30vh 40vh;
   grid-template-areas:
     "img bio bio"
     "first second third";
@@ -79,17 +81,24 @@ h2 {
   grid-area: img;
 
   img {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
   }
 }
 .descrip {
-  border-bottom: $secondary-color;
-  background-color: $main-color;
+  border-bottom: 2px solid $secondary-color;
+  background-color: rgba($main-color, 0.4);
+  h3 {
+    text-transform: capitalize;
+  }
 }
 .bio {
   grid-area: bio;
   font-size: 1.5rem;
+  h3 {
+    color: $secondary-color;
+    margin-top: 0.3rem;
+  }
 }
 .first {
   grid-area: first;
