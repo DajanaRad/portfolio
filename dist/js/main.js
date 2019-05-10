@@ -18,7 +18,10 @@ function toggleMenu(e) {
     menuPhoto.classList.add("show");
     menuNavItems.forEach(item => item.classList.add("show"));
     main.style = "display:none";
-    footer.style = "display:none";
+    if (footer !== null) {
+      footer.style = "display:none";
+    }
+
     //set menu state
     showMenu = true;
   } else {
@@ -28,7 +31,10 @@ function toggleMenu(e) {
     menuPhoto.classList.remove("show");
     menuNavItems.forEach(item => item.classList.remove("show"));
     main.style = "display:block";
-    footer.style = "display:block";
+    if (footer !== null) {
+      footer.style = "display:block";
+    }
+
     showMenu = false;
   }
 }
