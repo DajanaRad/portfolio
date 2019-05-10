@@ -13,14 +13,16 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5rem;
 }
+
 header {
   position: fixed;
   z-index: 9;
+  margin: 0;
 }
 main {
   z-index: 10;
   position: relative;
-
+  margin: 0;
   .icons {
     a {
       display: inline-block;

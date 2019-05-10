@@ -132,11 +132,13 @@ body {
 
 header {
   position: fixed;
-  z-index: 9; }
+  z-index: 9;
+  margin: 0; }
 
 main {
   z-index: 10;
-  position: relative; }
+  position: relative;
+  margin: 0; }
   main .icons a {
     display: inline-block;
     padding: 0.4rem; }
