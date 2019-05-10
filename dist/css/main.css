@@ -173,16 +173,17 @@ h2 {
   width: 98vw; }
 
 .grid-conteiner {
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 30vh);
+  grid-template-rows: 40vh 30vh;
   grid-template-areas: "img bio bio" "first second third"; }
 
 .my-img {
-  grid-area: img;
-  width: 250px;
-  height: 250px; }
+  grid-area: img; }
+  .my-img img {
+    width: 250px;
+    height: 250px; }
 
 .bio {
   grid-area: bio; }
@@ -197,7 +198,14 @@ h2 {
   grid-area: third; }
 
 #main-footer {
-  color: #fff; }
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  font-weight: 500;
+  width: 100vw;
+  height: 2rem;
+  background: #444444; }
 
 @media (max-width: 40rem) {
   h1.lg-heading {
