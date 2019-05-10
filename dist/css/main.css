@@ -170,28 +170,34 @@ h2 {
   margin: 0;
   display: inline-block;
   z-index: 8;
-  width: 100vw; }
+  width: 98vw; }
 
 .grid-conteiner {
   grid-gap: 1rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 30vh);
   grid-template-areas: "img bio bio" "first second third"; }
 
-.menu-photo {
-  grid-area: "img"; }
+.my-img {
+  grid-area: img;
+  width: 250px;
+  height: 250px; }
 
 .bio {
-  grid-area: "bio"; }
+  grid-area: bio; }
 
 .first {
-  grid-area: "first"; }
+  grid-area: first; }
 
 .second {
-  grid-area: "second"; }
+  grid-area: second; }
 
 .third {
   grid-area: third; }
+
+#main-footer {
+  color: #fff; }
 
 @media (max-width: 40rem) {
   h1.lg-heading {
