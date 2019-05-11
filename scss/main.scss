@@ -73,6 +73,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 28vw);
   grid-template-rows: 30vh 40vh;
+  justify-content: center;
   grid-template-areas:
     "img bio bio"
     "first second third";
