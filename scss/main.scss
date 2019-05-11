@@ -88,6 +88,11 @@ h2 {
     font-size: 1rem;
     border: 3px solid $secondary-color;
     display: inline-block;
+    &:hover {
+      width: 280px;
+      height: 280px;
+      @include ease-out;
+    }
   }
 }
 .descrip {

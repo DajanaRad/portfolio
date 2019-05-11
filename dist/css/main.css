@@ -178,6 +178,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 28vw);
   grid-template-rows: 30vh 40vh;
+  justify-content: center;
   grid-template-areas: "img bio bio" "first second third"; }
 
 .my-img {
@@ -189,6 +190,10 @@ h2 {
     font-size: 1rem;
     border: 3px solid #eece1a;
     display: inline-block; }
+    .my-img img:hover {
+      width: 280px;
+      height: 280px;
+      transition: all 0.5s ease-out; }
 
 .descrip {
   border-bottom: 2px solid #eece1a;
