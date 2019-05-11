@@ -137,7 +137,8 @@ header {
 
 main {
   z-index: 9;
-  position: absolute; }
+  position: absolute;
+  height: calc(100vh - 5rem); }
   main .icons a {
     display: inline-block;
     padding: 0.4rem; }
