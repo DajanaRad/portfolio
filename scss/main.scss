@@ -92,6 +92,7 @@ h2 {
       width: 280px;
       height: 280px;
       @include ease-out;
+      transform: translateX(100deg);
     }
   }
 }
