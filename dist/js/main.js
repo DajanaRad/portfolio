@@ -18,7 +18,7 @@ function toggleMenu(e) {
     menuPhoto.classList.add("show");
     menuNavItems.forEach(item => item.classList.add("show"));
     main.style = "display:none";
-    main.style = "zIndex: 10";
+    // main.style = "zIndex: 9";
     if (footer !== null) {
       footer.style = "display:none";
     }
@@ -32,7 +32,7 @@ function toggleMenu(e) {
     menuPhoto.classList.remove("show");
     menuNavItems.forEach(item => item.classList.remove("show"));
     main.style = "display:block";
-    main.style = "zIndex: 9";
+    // main.style = "zIndex: 9";
     if (footer !== null) {
       footer.style = "display:block";
     }
