@@ -63,6 +63,7 @@ h2 {
 }
 
 //ABOUT PAGE
+
 #header-zindax {
   z-index: 7;
 }
@@ -140,6 +141,32 @@ h2 {
 }
 
 //WORK PAGE
+#work-conteiner {
+  margin: 1rem;
+  display: grid;
+  grid-template-areas:
+    "uhost shop"
+    "rgba .";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.uhost {
+  grid-area: uhost;
+}
+.shop {
+  grid-area: shop;
+}
+.guesing-game {
+  grid-area: rgba;
+}
+.project {
+  width: 45%;
+  display: inline-block;
+  img {
+    width: 450px;
+    height: 450px;
+  }
+}
 
 // RESPONSIVNES
 
