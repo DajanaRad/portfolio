@@ -157,7 +157,7 @@ h2 {
   display: grid;
 
   grid-template-columns: repeat(auto-fill, 300px);
-  grid-template-rows: repeat(2, 300px);
+  grid-template-rows: repeat(2, 350px);
   grid-gap: 0.3rem;
 }
 .js-30-days {
@@ -168,15 +168,27 @@ h2 {
 }
 .project {
   a {
-    display: inline-block;
-    height: 100%;
+    // display: inline-block;
+    // height: 100%;
+
     img {
       width: 300px;
       height: 300px;
+      margin: 3px solid $white-color;
+    }
+  }
+  .icons {
+    a {
+      display: inline-block;
+      padding: 0.4rem;
+      color: $white-color;
+      &:hover {
+        color: $secondary-color;
+        @include ease-out();
+      }
     }
   }
 }
-
 // RESPONSIVNES
 
 @media (max-width: 40rem) {
@@ -193,8 +205,8 @@ h2 {
   .my-img {
     margin: 0 auto;
     & img {
-      width: 300px;
-      height: 300px;
+      width: 220px;
+      height: 220px;
     }
   }
 

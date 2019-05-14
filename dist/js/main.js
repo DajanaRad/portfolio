@@ -5,7 +5,6 @@ const menuNav = document.querySelector(".menu-nav");
 let menuNavItems = document.querySelectorAll(".nav-items");
 const main = document.querySelector(".js-staff");
 const footer = document.querySelector("#main-footer");
-const header = document.querySelector("header");
 
 //set initial state of menu
 let showMenu = false;
@@ -19,7 +18,6 @@ function toggleMenu(e) {
     menuPhoto.classList.add("show");
     menuNavItems.forEach(item => item.classList.add("show"));
     main.style = "display:none";
-    header.style = "height: 3rem";
     if (footer !== null) {
       footer.style = "display:none";
     }
@@ -33,7 +31,6 @@ function toggleMenu(e) {
     menuPhoto.classList.remove("show");
     menuNavItems.forEach(item => item.classList.remove("show"));
     main.style = "display:block";
-    header.style = "height: 100vh";
     if (footer !== null) {
       footer.style = "display:block";
     }
