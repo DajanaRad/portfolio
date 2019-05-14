@@ -142,30 +142,46 @@ h2 {
 
 //WORK PAGE
 #work-conteiner {
-  margin: 1rem;
+  justify-content: center;
+
   display: grid;
   grid-template-areas:
     "uhost shop"
-    "rgba .";
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+    "uhost javascript"
+    "rgba javascript";
+  grid-template-columns: repeat(2, 300px);
+  grid-template-rows: 200px 100px 200px;
+  grid-gap: 0.1rem;
 }
 .uhost {
   grid-area: uhost;
+  img {
+    width: 300px;
+    height: 300px;
+  }
 }
 .shop {
   grid-area: shop;
+  img {
+    width: 300px;
+    height: 300px;
+  }
 }
 .guesing-game {
   grid-area: rgba;
+  img {
+    width: 300px;
+    height: 300px;
+  }
+}
+.js-30-days {
+  grid-area: javascript;
 }
 .project {
-  width: 45%;
-  display: inline-block;
-  img {
-    width: 450px;
-    height: 450px;
-  }
+  // img {
+  //   width: 400px;
+  //   height: 400px;
+  // }
 }
 
 // RESPONSIVNES

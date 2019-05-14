@@ -235,27 +235,33 @@ h2 {
   z-index: 10; }
 
 #work-conteiner {
-  margin: 1rem;
+  justify-content: center;
   display: grid;
-  grid-template-areas: "uhost shop" "rgba .";
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr); }
+  grid-template-areas: "uhost shop" "uhost javascript" "rgba javascript";
+  grid-template-columns: repeat(2, 300px);
+  grid-template-rows: 200px 100px 200px;
+  grid-gap: 0.1rem; }
 
 .uhost {
   grid-area: uhost; }
+  .uhost img {
+    width: 300px;
+    height: 300px; }
 
 .shop {
   grid-area: shop; }
+  .shop img {
+    width: 300px;
+    height: 300px; }
 
 .guesing-game {
   grid-area: rgba; }
+  .guesing-game img {
+    width: 300px;
+    height: 300px; }
 
-.project {
-  width: 45%;
-  display: inline-block; }
-  .project img {
-    width: 450px;
-    height: 450px; }
+.js-30-days {
+  grid-area: javascript; }
 
 @media (max-width: 40rem) {
   h1.lg-heading {
