@@ -143,14 +143,13 @@ h2 {
 //WORK PAGE
 #work-conteiner {
   justify-content: center;
-
+  margin-top: 1rem;
   display: grid;
   grid-template-areas:
     "uhost shop"
-    "uhost javascript"
     "rgba javascript";
   grid-template-columns: repeat(2, 300px);
-  grid-template-rows: 200px 100px 200px;
+  grid-template-rows: repeat(2, 300px);
   grid-gap: 0.1rem;
 }
 .uhost {
@@ -176,12 +175,18 @@ h2 {
 }
 .js-30-days {
   grid-area: javascript;
+  // grid-template-columns: repeat(2, 1fr);
+  // grid-template-rows: repeat(2, 1fr);
+  img {
+    width: 50%;
+    heifht: 50%;
+  }
 }
 .project {
-  // img {
-  //   width: 400px;
-  //   height: 400px;
-  // }
+  img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 // RESPONSIVNES
