@@ -132,6 +132,9 @@ h2 {
 }
 .first {
   grid-area: first;
+  img {
+    width: 50px;
+  }
 }
 .second {
   grid-area: second;
@@ -157,7 +160,7 @@ h2 {
   display: grid;
 
   grid-template-columns: repeat(auto-fill, 300px);
-  grid-template-rows: repeat(2, 350px);
+  grid-template-rows: repeat(2, 300px);
   grid-gap: 0.3rem;
 }
 .js-30-days {
@@ -174,20 +177,18 @@ h2 {
     img {
       width: 300px;
       height: 300px;
-      margin: 3px solid $white-color;
+      border: 3px solid $white-color;
     }
   }
-  .icons {
-    a {
-      display: inline-block;
-      padding: 0.4rem;
-      color: $white-color;
-      &:hover {
-        color: $secondary-color;
-        @include ease-out();
-      }
-    }
-  }
+  // a {
+  //   display: inline-block;
+  //   padding: 0.4rem;
+  //   color: $white-color;
+  //   &:hover {
+  //     color: $secondary-color;
+  //     @include ease-out();
+  //   }
+  // }
 }
 // RESPONSIVNES
 

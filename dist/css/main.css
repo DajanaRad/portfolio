@@ -239,7 +239,7 @@ h2 {
   margin-top: 5rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, 300px);
-  grid-template-rows: repeat(2, 350px);
+  grid-template-rows: repeat(2, 300px);
   grid-gap: 0.3rem; }
 
 .js-30-days img {
@@ -249,15 +249,7 @@ h2 {
 .project a img {
   width: 300px;
   height: 300px;
-  margin: 3px solid #fff; }
-
-.project .icons a {
-  display: inline-block;
-  padding: 0.4rem;
-  color: #fff; }
-  .project .icons a:hover {
-    color: #eece1a;
-    transition: all 0.5s ease-out; }
+  border: 3px solid #fff; }
 
 @media (max-width: 40rem) {
   h1.lg-heading {
