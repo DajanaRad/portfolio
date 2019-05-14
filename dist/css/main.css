@@ -20,7 +20,6 @@
     height: 3px;
     display: flex;
     background: #fff;
-    background: #fff;
     text-decoration: none;
     cursor: pointer;
     margin: 0.3rem;
@@ -106,6 +105,24 @@
 .nav-items:nth-child(4) {
   transition-delay: 0.8s; }
 
+.body-imgs {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  background: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .body-imgs::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(68, 68, 68, 0.9); }
+
 * {
   box-sizing: border-box; }
 
@@ -117,18 +134,6 @@ body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5rem; }
-  body#body-img {
-    background: url("../img/background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; }
-    body#body-img::after {
-      content: "";
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: 100vw;
-      height: 100vh;
-      background: rgba(68, 68, 68, 0.9); }
 
 header {
   position: fixed;
@@ -140,7 +145,8 @@ main {
   position: absolute; }
   main .icons a {
     display: inline-block;
-    padding: 0.4rem; }
+    padding: 0.4rem;
+    color: #fff; }
     main .icons a:hover {
       color: #eece1a;
       transition: all 0.5s ease-out; }
@@ -165,15 +171,10 @@ h2 {
 .last-name {
   color: #eece1a; }
 
-#header-zindax {
-  z-index: 7; }
-
 #about {
   left: 0.5rem;
   right: 0.5rem;
-  top: 3rem;
-  height: calc(100vh - 2rem);
-  z-index: 8;
+  top: 2rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
 
 .grid-conteiner {
@@ -238,15 +239,19 @@ h2 {
   margin-top: 5rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, 300px);
-  grid-gap: 0.1rem; }
+  grid-template-rows: repeat(2, 300px);
+  grid-gap: 0.3rem; }
 
 .js-30-days img {
   width: 49%;
   height: 49%; }
 
-.project img {
-  width: 300px;
-  height: 300px; }
+.project a {
+  display: inline-block;
+  height: 100%; }
+  .project a img {
+    width: 300px;
+    height: 300px; }
 
 @media (max-width: 40rem) {
   h1.lg-heading {
@@ -266,7 +271,9 @@ h2 {
     flex-direction: column;
     margin: 0 auto; }
   .descrip {
-    margin: 2rem 0; } }
+    margin: 2rem 0; }
+  #work-conteiner {
+    grid-gap: 1.3rem; } }
 
 @media (max-width: 32rem) {
   h1.lg-heading {

@@ -1,11 +1,29 @@
 @import "config";
 @import "menu";
+.body-imgs {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  background: $home-img;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba($main-color, $backgound-opacity);
+  }
+}
 * {
   box-sizing: border-box;
 }
 body {
   max-width: 70rem;
-  @include background;
   background-color: $main-color;
   color: set-text-color($main-color);
   height: 100vh;
@@ -22,14 +40,11 @@ header {
 main {
   z-index: 9;
   position: absolute;
-
-  // .text {
-  //   z-index: 7;
-  // }
   .icons {
     a {
       display: inline-block;
       padding: 0.4rem;
+      color: $white-color;
       &:hover {
         color: $secondary-color;
         @include ease-out();
@@ -64,15 +79,10 @@ h2 {
 
 //ABOUT PAGE
 
-#header-zindax {
-  z-index: 7;
-}
 #about {
   left: 0.5rem;
   right: 0.5rem;
-  top: 3rem;
-  height: calc(100vh - 2rem);
-  z-index: 8;
+  top: 2rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .grid-conteiner {
@@ -147,8 +157,8 @@ h2 {
   display: grid;
 
   grid-template-columns: repeat(auto-fill, 300px);
-  // grid-template-rows: repeat(2, 300px);
-  grid-gap: 0.1rem;
+  grid-template-rows: repeat(2, 300px);
+  grid-gap: 0.3rem;
 }
 .js-30-days {
   img {
@@ -157,9 +167,13 @@ h2 {
   }
 }
 .project {
-  img {
-    width: 300px;
-    height: 300px;
+  a {
+    display: inline-block;
+    height: 100%;
+    img {
+      width: 300px;
+      height: 300px;
+    }
   }
 }
 
@@ -192,6 +206,10 @@ h2 {
   }
   .descrip {
     margin: 2rem 0;
+  }
+  // WORK PAGE
+  #work-conteiner {
+    grid-gap: 1.3rem;
   }
 }
 

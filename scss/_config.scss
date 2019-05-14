@@ -9,25 +9,6 @@ $white-color: #fff;
   transition: all 0.5s ease-out;
 }
 
-@mixin background {
-  @if $show-home-img {
-    &#body-img {
-      background: $home-img;
-      background-repeat: no-repeat;
-      background-size: cover;
-      &::after {
-        content: "";
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 100vw;
-        height: 100vh;
-        background: rgba($main-color, $backgound-opacity);
-      }
-    }
-  }
-}
-
 //set color depending od the darknes
 
 @function set-text-color($color) {
