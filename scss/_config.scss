@@ -15,7 +15,6 @@ $white-color: #fff;
       background: $home-img;
       background-repeat: no-repeat;
       background-size: cover;
-
       &::after {
         content: "";
         position: fixed;
