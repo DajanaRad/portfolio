@@ -162,7 +162,7 @@ h2 {
   margin-top: 5rem;
   display: grid;
 
-  grid-template-columns: repeat(auto-fill, 300px);
+  grid-template-columns: repeat(auto-fill, 350px);
   grid-template-rows: repeat(2, 300px);
   grid-gap: 0.3rem;
 }
@@ -178,7 +178,7 @@ h2 {
     // height: 100%;
 
     img {
-      width: 300px;
+      width: 350px;
       height: 300px;
       border: 3px solid black;
     }
