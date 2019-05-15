@@ -178,7 +178,7 @@ h2 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
 
 .grid-conteiner {
-  grid-gap: 2rem;
+  grid-gap: 3rem;
   display: grid;
   grid-template-columns: repeat(3, 28vw);
   grid-template-rows: 30vh 40vh;
@@ -206,7 +206,8 @@ h2 {
   .descrip h3 {
     text-transform: capitalize;
     margin-top: 0.3rem;
-    text-align: center; }
+    text-align: center;
+    text-shadow: 2px solid #313133; }
 
 .bio {
   grid-area: bio;
@@ -217,6 +218,10 @@ h2 {
 
 .first {
   grid-area: first; }
+  .first img {
+    width: 100px;
+    height: 150px;
+    background: #444; }
 
 .second {
   grid-area: second; }
@@ -249,7 +254,7 @@ h2 {
 .project a img {
   width: 300px;
   height: 300px;
-  border: 3px solid #fff; }
+  border: 3px solid black; }
 
 @media (max-width: 40rem) {
   h1.lg-heading {

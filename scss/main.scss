@@ -86,7 +86,7 @@ h2 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .grid-conteiner {
-  grid-gap: 2rem;
+  grid-gap: 3rem;
   display: grid;
   grid-template-columns: repeat(3, 28vw);
   grid-template-rows: 30vh 40vh;
@@ -120,6 +120,7 @@ h2 {
     text-transform: capitalize;
     margin-top: 0.3rem;
     text-align: center;
+    text-shadow: 2px solid #313133;
   }
 }
 .bio {
@@ -133,7 +134,9 @@ h2 {
 .first {
   grid-area: first;
   img {
-    width: 50px;
+    width: 100px;
+    height: 150px;
+    background: $main-color;
   }
 }
 .second {
@@ -177,7 +180,7 @@ h2 {
     img {
       width: 300px;
       height: 300px;
-      border: 3px solid $white-color;
+      border: 3px solid black;
     }
   }
   // a {
