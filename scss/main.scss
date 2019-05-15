@@ -174,8 +174,10 @@ h2 {
 // }
 .project {
   .img_link {
-    // display: inline-block;
-    // height: 100%;
+    display: inline-block;
+    // height: 250px;
+    text-decoration: none;
+    line-height: 0;
 
     img {
       width: 100%;
@@ -187,25 +189,29 @@ h2 {
         @include ease-out;
       }
     }
-    .project_link {
-      color: $white-color;
-      display: inline-block;
-      text-align: center;
-    }
-    // &.dark_link {
-    // }
-    // &.white_link {
-    // }
   }
-  // i {
-  //   display: inline-block;
-  //   padding: 0.4rem;
-  //   color: $white-color;
-  //   &:hover {
-  //     color: $secondary-color;
-  //     @include ease-out();
-  //   }
-  // }
+  //button styles
+
+  .project_link {
+    color: $white-color;
+    display: block;
+    text-align: center;
+
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+      color: $secondary-color;
+      @include ease-out();
+    }
+    &.white_link {
+      color: $white-color;
+      background: #1e1d1d;
+    }
+    &.dark_link {
+      color: #1e1d1d;
+      background: #dbd9d9;
+    }
+  }
 }
 // RESPONSIVNES
 
