@@ -133,10 +133,10 @@ h2 {
 }
 .first {
   grid-area: first;
-  img {
-    width: 100px;
-    height: 150px;
-    background: $main-color;
+  text-align: center;
+  font-weight: 600;
+  h3 {
+    margin-bottom: 2.5rem;
   }
 }
 .second {
@@ -144,6 +144,19 @@ h2 {
 }
 .third {
   grid-area: third;
+  text-align: center;
+  p {
+    margin-bottom: 0;
+  }
+  a {
+    display: inline-block;
+    margin-bottom: 2rem;
+    color: $white-color;
+    &:hover {
+      color: $secondary-color;
+      @include ease-out;
+    }
+  }
 }
 #main-footer {
   color: set-text-color($main-color);
@@ -177,11 +190,10 @@ h2 {
     display: inline-block;
     // height: 250px;
     text-decoration: none;
-    line-height: 0;
 
     img {
       width: 100%;
-      height: 250px;
+      height: 200px;
       border: 3px solid $white-color;
       &:hover {
         opacity: 0.5;
@@ -196,12 +208,15 @@ h2 {
     color: $white-color;
     display: block;
     text-align: center;
-
+    padding: 0.2rem;
+    margin-bottom: 0.3rem;
     text-decoration: none;
     cursor: pointer;
+    font-weight: 500;
     &:hover {
-      color: $secondary-color;
+      color: $secondary-color !important;
       @include ease-out();
+      background: rgba(#1e1d1d, 0.5) !important;
     }
     &.white_link {
       color: $white-color;
@@ -213,6 +228,21 @@ h2 {
     }
   }
 }
+
+//CONTACT PAGE
+.contact_main {
+  text-align: center;
+}
+.contact_me {
+  margin-top: 5rem;
+  border: 2px solid $secondary-color;
+  min-width: 25rem;
+  display: inline-block;
+  p {
+    color: $secondary-color;
+  }
+}
+
 // RESPONSIVNES
 
 @media (max-width: 40rem) {
@@ -294,6 +324,10 @@ h2 {
       height: 150px;
       display: inline-block;
     }
+  }
+  // respnsivnes of contact page
+  .contact_me {
+    min-width: 18rem;
   }
 }
 

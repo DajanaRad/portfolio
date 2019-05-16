@@ -217,17 +217,27 @@ h2 {
     margin-top: 0.3rem; }
 
 .first {
-  grid-area: first; }
-  .first img {
-    width: 100px;
-    height: 150px;
-    background: #444; }
+  grid-area: first;
+  text-align: center;
+  font-weight: 600; }
+  .first h3 {
+    margin-bottom: 2.5rem; }
 
 .second {
   grid-area: second; }
 
 .third {
-  grid-area: third; }
+  grid-area: third;
+  text-align: center; }
+  .third p {
+    margin-bottom: 0; }
+  .third a {
+    display: inline-block;
+    margin-bottom: 2rem;
+    color: #fff; }
+    .third a:hover {
+      color: #eece1a;
+      transition: all 0.5s ease-out; }
 
 #main-footer {
   color: #fff;
@@ -248,11 +258,10 @@ h2 {
 
 .project .img_link {
   display: inline-block;
-  text-decoration: none;
-  line-height: 0; }
+  text-decoration: none; }
   .project .img_link img {
     width: 100%;
-    height: 250px;
+    height: 200px;
     border: 3px solid #fff; }
     .project .img_link img:hover {
       opacity: 0.5;
@@ -263,17 +272,32 @@ h2 {
   color: #fff;
   display: block;
   text-align: center;
+  padding: 0.2rem;
+  margin-bottom: 0.3rem;
   text-decoration: none;
-  cursor: pointer; }
+  cursor: pointer;
+  font-weight: 500; }
   .project .project_link:hover {
-    color: #eece1a;
-    transition: all 0.5s ease-out; }
+    color: #eece1a !important;
+    transition: all 0.5s ease-out;
+    background: rgba(30, 29, 29, 0.5) !important; }
   .project .project_link.white_link {
     color: #fff;
     background: #1e1d1d; }
   .project .project_link.dark_link {
     color: #1e1d1d;
     background: #dbd9d9; }
+
+.contact_main {
+  text-align: center; }
+
+.contact_me {
+  margin-top: 5rem;
+  border: 2px solid #eece1a;
+  min-width: 25rem;
+  display: inline-block; }
+  .contact_me p {
+    color: #eece1a; }
 
 @media (max-width: 40rem) {
   h1.lg-heading {
@@ -330,7 +354,9 @@ h2 {
     .menu-photo img {
       width: 150px;
       height: 150px;
-      display: inline-block; } }
+      display: inline-block; }
+  .contact_me {
+    min-width: 18rem; } }
 
 @media (max-width: 28rem) {
   #about h1.lg-heading {
