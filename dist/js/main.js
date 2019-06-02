@@ -6,6 +6,21 @@ let menuNavItems = document.querySelectorAll(".nav-items");
 const main = document.querySelector(".js-staff");
 const footer = document.querySelector("#main-footer");
 
+let checking = false;
+const descriptionUhost = document.querySelector(".description_uhost");
+const uHost = document.querySelector(".uhost");
+if (uHost !== null) {
+  uHost.addEventListener("click", function() {
+    if (!checking) {
+      descriptionUhost.style = "display: block";
+      checking = true;
+    } else {
+      descriptionUhost.style = "display: none";
+      checking = false;
+    }
+  });
+}
+
 //set initial state of menu
 let showMenu = false;
 

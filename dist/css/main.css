@@ -170,6 +170,7 @@ h2 {
   color: #eece1a; }
 
 #about {
+  margin: 1.5rem;
   left: 0.5rem;
   right: 0.5rem;
   top: 2rem;
@@ -178,6 +179,7 @@ h2 {
 .grid-conteiner {
   grid-gap: 2.5rem;
   display: grid;
+  grid-template-columns: repeat(3, 28vw);
   justify-content: center;
   grid-template-areas: "img bio bio" "first second third"; }
 
@@ -259,7 +261,8 @@ h2 {
 
 .project .img_link {
   display: inline-block;
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
   .project .img_link img {
     width: 100%;
     height: 200px;
@@ -276,7 +279,8 @@ h2 {
   padding: 0.2rem;
   margin-bottom: 0.3rem;
   text-decoration: none;
-  font-weight: 500; }
+  font-weight: 500;
+  cursor: pointer; }
   .project .project_link:hover {
     color: #eece1a !important;
     transition: all 0.5s ease-out;
@@ -291,10 +295,10 @@ h2 {
 .project_description {
   display: none;
   position: absolute;
-  left: 34vw;
+  left: 30vw;
   top: 40vh;
   background: rgba(24, 25, 25, 0.9);
-  width: 350px;
+  width: 250px;
   border: 1px solid #eece1a; }
   .project_description p {
     padding: 0.4rem; }
@@ -377,4 +381,7 @@ h2 {
     line-height: 3rem;
     margin-bottom: 0.2rem; }
   .sm-heading {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  .project_description {
+    left: 2rem;
+    top: 60vh; } }

@@ -80,6 +80,7 @@ h2 {
 //ABOUT PAGE
 
 #about {
+  margin: 1.5rem;
   left: 0.5rem;
   right: 0.5rem;
   top: 2rem;
@@ -88,7 +89,7 @@ h2 {
 .grid-conteiner {
   grid-gap: 2.5rem;
   display: grid;
-  // grid-template-columns: repeat(3, 28vw);
+  grid-template-columns: repeat(3, 28vw);
   justify-content: center;
   grid-template-areas:
     "img bio bio"
@@ -183,9 +184,8 @@ h2 {
 .project {
   .img_link {
     display: inline-block;
-    // height: 250px;
     text-decoration: none;
-
+    cursor: pointer;
     img {
       width: 100%;
       height: 200px;
@@ -207,6 +207,7 @@ h2 {
     margin-bottom: 0.3rem;
     text-decoration: none;
     font-weight: 500;
+    cursor: pointer;
     &:hover {
       color: $secondary-color !important;
       @include ease-out();
@@ -224,13 +225,14 @@ h2 {
 }
 
 //project description in work page
+
 .project_description {
   display: none;
   position: absolute;
-  left: 34vw;
+  left: 30vw;
   top: 40vh;
   background: rgba(24, 25, 25, 0.9);
-  width: 350px;
+  width: 250px;
   border: 1px solid $secondary-color;
   p {
     padding: 0.4rem;
@@ -238,6 +240,7 @@ h2 {
 }
 
 //CONTACT PAGE
+
 .contact_main {
   text-align: center;
 }
@@ -251,9 +254,7 @@ h2 {
   }
 }
 
-// RESPONSIVNES
-
-//about page
+//ABOUT PAGE RESPONSIVNES
 
 @media (max-width: 52rem) {
   .grid-conteiner {
@@ -274,6 +275,8 @@ h2 {
     margin: 0 auto;
   }
 }
+
+// RESPONSIVNES
 
 @media (max-width: 40rem) {
   h1.lg-heading {
@@ -351,5 +354,9 @@ h2 {
   }
   .sm-heading {
     font-size: 1rem;
+  }
+  .project_description {
+    left: 2rem;
+    top: 60vh;
   }
 }
