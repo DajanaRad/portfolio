@@ -86,10 +86,9 @@ h2 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .grid-conteiner {
-  grid-gap: 3rem;
+  grid-gap: 2.5rem;
   display: grid;
-  grid-template-columns: repeat(3, 28vw);
-  grid-template-rows: 30vh 40vh;
+  // grid-template-columns: repeat(3, 28vw);
   justify-content: center;
   grid-template-areas:
     "img bio bio"
@@ -97,17 +96,18 @@ h2 {
 }
 .my-img {
   grid-area: img;
-
+  width: 270px;
+  height: 270px;
   & img {
-    width: 200px;
-    height: 200px;
+    width: 260px;
+    height: 260px;
     border-radius: 50%;
     font-size: 1rem;
     border: 3px solid $secondary-color;
     display: inline-block;
     &:hover {
-      width: 220px;
-      height: 220px;
+      width: 270px;
+      height: 270px;
       @include ease-out;
       translate: 50%;
     }
@@ -135,18 +135,21 @@ h2 {
   grid-area: first;
   text-align: center;
   font-weight: 600;
+  font-size: 1.3rem;
   h3 {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2.5rem 0;
   }
 }
 .second {
   grid-area: second;
+  font-size: 1.3rem;
 }
 .third {
   grid-area: third;
   text-align: center;
+  font-size: 1.3rem;
   p {
-    margin-bottom: 0;
+    margin-bottom: 0.3rem;
   }
   a {
     display: inline-block;
@@ -174,17 +177,9 @@ h2 {
   justify-content: center;
   margin-top: 5rem;
   display: grid;
-
   grid-template-columns: repeat(auto-fill, 300px);
-  // grid-template-rows: repeat(2, 300px);
   grid-gap: 1.5rem;
 }
-// .js-30-days {
-//   img {
-//     width: 49%;
-//     height: 49%;
-//   }
-// }
 .project {
   .img_link {
     display: inline-block;
@@ -211,7 +206,6 @@ h2 {
     padding: 0.2rem;
     margin-bottom: 0.3rem;
     text-decoration: none;
-    cursor: pointer;
     font-weight: 500;
     &:hover {
       color: $secondary-color !important;
@@ -226,6 +220,20 @@ h2 {
       color: #1e1d1d;
       background: #dbd9d9;
     }
+  }
+}
+
+//project description in work page
+.project_description {
+  display: none;
+  position: absolute;
+  left: 34vw;
+  top: 40vh;
+  background: rgba(24, 25, 25, 0.9);
+  width: 350px;
+  border: 1px solid $secondary-color;
+  p {
+    padding: 0.4rem;
   }
 }
 
@@ -245,10 +253,16 @@ h2 {
 
 // RESPONSIVNES
 
-@media (max-width: 40rem) {
-  h1.lg-heading {
-    font-size: 5rem;
-    line-height: 4rem;
+//about page
+
+@media (max-width: 52rem) {
+  .grid-conteiner {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .descrip {
+    margin: 2rem 0;
   }
   .text {
     display: inline-block;
@@ -258,24 +272,18 @@ h2 {
   }
   .my-img {
     margin: 0 auto;
-    & img {
-      width: 220px;
-      height: 220px;
-    }
+  }
+}
+
+@media (max-width: 40rem) {
+  h1.lg-heading {
+    font-size: 5rem;
+    line-height: 4rem;
   }
 
-  // about page
-  .grid-conteiner {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-  }
-  .descrip {
-    margin: 2rem 0;
-  }
   // WORK PAGE
   #work-conteiner {
-    grid-gap: 1.3rem;
+    grid-gap: 1rem;
   }
 }
 

@@ -14,13 +14,11 @@
     cursor: pointer; }
 
 .menu-btn {
-  background: rgba(68, 68, 68, 0.1);
-  border: none; }
+  background: rgba(68, 68, 68, 0.1); }
   .menu-btn .btn-line {
     height: 3px;
     display: flex;
     background: #fff;
-    text-decoration: none;
     cursor: pointer;
     margin: 0.3rem;
     border-radius: 5px;
@@ -178,25 +176,25 @@ h2 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
 
 .grid-conteiner {
-  grid-gap: 3rem;
+  grid-gap: 2.5rem;
   display: grid;
-  grid-template-columns: repeat(3, 28vw);
-  grid-template-rows: 30vh 40vh;
   justify-content: center;
   grid-template-areas: "img bio bio" "first second third"; }
 
 .my-img {
-  grid-area: img; }
+  grid-area: img;
+  width: 270px;
+  height: 270px; }
   .my-img img {
-    width: 200px;
-    height: 200px;
+    width: 260px;
+    height: 260px;
     border-radius: 50%;
     font-size: 1rem;
     border: 3px solid #eece1a;
     display: inline-block; }
     .my-img img:hover {
-      width: 220px;
-      height: 220px;
+      width: 270px;
+      height: 270px;
       transition: all 0.5s ease-out;
       translate: 50%; }
 
@@ -219,18 +217,21 @@ h2 {
 .first {
   grid-area: first;
   text-align: center;
-  font-weight: 600; }
+  font-weight: 600;
+  font-size: 1.3rem; }
   .first h3 {
-    margin-bottom: 2.5rem; }
+    margin-bottom: 2.5rem 0; }
 
 .second {
-  grid-area: second; }
+  grid-area: second;
+  font-size: 1.3rem; }
 
 .third {
   grid-area: third;
-  text-align: center; }
+  text-align: center;
+  font-size: 1.3rem; }
   .third p {
-    margin-bottom: 0; }
+    margin-bottom: 0.3rem; }
   .third a {
     display: inline-block;
     margin-bottom: 2rem;
@@ -275,7 +276,6 @@ h2 {
   padding: 0.2rem;
   margin-bottom: 0.3rem;
   text-decoration: none;
-  cursor: pointer;
   font-weight: 500; }
   .project .project_link:hover {
     color: #eece1a !important;
@@ -288,6 +288,17 @@ h2 {
     color: #1e1d1d;
     background: #dbd9d9; }
 
+.project_description {
+  display: none;
+  position: absolute;
+  left: 34vw;
+  top: 40vh;
+  background: rgba(24, 25, 25, 0.9);
+  width: 350px;
+  border: 1px solid #eece1a; }
+  .project_description p {
+    padding: 0.4rem; }
+
 .contact_main {
   text-align: center; }
 
@@ -299,27 +310,26 @@ h2 {
   .contact_me p {
     color: #eece1a; }
 
-@media (max-width: 40rem) {
-  h1.lg-heading {
-    font-size: 5rem;
-    line-height: 4rem; }
-  .text {
-    display: inline-block; }
-  .bio {
-    text-align: center; }
-  .my-img {
-    margin: 0 auto; }
-    .my-img img {
-      width: 220px;
-      height: 220px; }
+@media (max-width: 52rem) {
   .grid-conteiner {
     display: flex;
     flex-direction: column;
     margin: 0 auto; }
   .descrip {
     margin: 2rem 0; }
+  .text {
+    display: inline-block; }
+  .bio {
+    text-align: center; }
+  .my-img {
+    margin: 0 auto; } }
+
+@media (max-width: 40rem) {
+  h1.lg-heading {
+    font-size: 5rem;
+    line-height: 4rem; }
   #work-conteiner {
-    grid-gap: 1.3rem; } }
+    grid-gap: 1rem; } }
 
 @media (max-width: 32rem) {
   h1.lg-heading {
