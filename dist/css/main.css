@@ -181,7 +181,8 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 28vw);
   justify-content: center;
-  grid-template-areas: "img bio bio" "first second third"; }
+  grid-template-areas: "img bio bio"
+ "first second third"; }
 
 .my-img {
   grid-area: img;
@@ -384,4 +385,8 @@ h2 {
     font-size: 1rem; }
   .project_description {
     left: 2rem;
-    top: 60vh; } }
+    top: 60vh; }
+  .bio p {
+   font-size:1rem;
+}
+ }
