@@ -198,8 +198,7 @@ h2 {
     .my-img img:hover {
       width: 270px;
       height: 270px;
-      transition: all 0.5s ease-out;
-      translate: 50%; }
+      transition: all 0.5s ease-out;}
 
 .descrip {
   border-bottom: 2px solid #eece1a;
