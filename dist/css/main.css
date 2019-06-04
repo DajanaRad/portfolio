@@ -87,15 +87,14 @@
       border-radius: 50%;
       font-size: 1rem;
       border: 3px solid #eece1a;
-      background: url(""); }
+      background: url("");
+      transition: all 0.5s ease-out; }
       .menu-photo img:hover {
         width: 300px;
-        height: 300px;
-        transition: all 0.5s ease-out; }
+        height: 300px; }
       .menu-photo img:not(:hover) {
         width: 200px;
-        height: 200px;
-        transition: all 0.5s ease-out; }
+        height: 200px; }
     .menu-photo.show {
       transform: translate3d(0, 0, 0); }
 
