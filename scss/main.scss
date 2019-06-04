@@ -250,28 +250,6 @@ h2 {
   }
 }
 
-//ABOUT PAGE RESPONSIVNES
-
-@media (max-width: 52rem) {
-  .grid-conteiner {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-  }
-  .descrip {
-    margin: 2rem 0;
-  }
-  .text {
-    display: inline-block;
-  }
-  .bio {
-    text-align: center;
-  }
-  .my-img {
-    margin: 0 auto;
-  }
-}
-
 // RESPONSIVNES
 
 @media (max-width: 66rem) {
@@ -300,6 +278,29 @@ h2 {
     }
   }
 }
+
+//ABOUT PAGE RESPONSIVNES
+
+@media (max-width: 52rem) {
+  .grid-conteiner {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .descrip {
+    margin: 2rem 0;
+  }
+  .text {
+    display: inline-block;
+  }
+  .bio {
+    text-align: center;
+  }
+  .my-img {
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 40rem) {
   h1.lg-heading {
     font-size: 5rem;
@@ -310,18 +311,12 @@ h2 {
   #work-conteiner {
     grid-gap: 1rem;
   }
-}
 
-@media (max-width: 32rem) {
-  h1.lg-heading {
-    font-size: 4.5rem;
-    line-height: 4rem;
-    margin-bottom: 0.5rem;
-  }
-  main#home {
-    padding: 0;
-    top: 12rem;
-    text-align: center;
+  //manu image
+
+  .menu-photo img:hover {
+    width: 200px;
+    height: 200px;
   }
 
   //resposivnes of menu
@@ -361,6 +356,19 @@ h2 {
   // respnsivnes of contact page
   .contact_me {
     min-width: 18rem;
+  }
+}
+
+@media (max-width: 32rem) {
+  h1.lg-heading {
+    font-size: 4.5rem;
+    line-height: 4rem;
+    margin-bottom: 0.5rem;
+  }
+  main#home {
+    padding: 0;
+    top: 12rem;
+    text-align: center;
   }
 }
 

@@ -88,6 +88,14 @@
       font-size: 1rem;
       border: 3px solid #eece1a;
       background: url(""); }
+      .menu-photo img:hover {
+        width: 300px;
+        height: 300px;
+        transition: all 0.5s ease-out; }
+      .menu-photo img:not(:hover) {
+        width: 200px;
+        height: 200px;
+        transition: all 0.5s ease-out; }
     .menu-photo.show {
       transform: translate3d(0, 0, 0); }
 
@@ -310,20 +318,6 @@ h2 {
   .contact_me p {
     color: #eece1a; }
 
-@media (max-width: 52rem) {
-  .grid-conteiner {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto; }
-  .descrip {
-    margin: 2rem 0; }
-  .text {
-    display: inline-block; }
-  .bio {
-    text-align: center; }
-  .my-img {
-    margin: 0 auto; } }
-
 @media (max-width: 66rem) {
   .my-img {
     width: 330px;
@@ -340,22 +334,29 @@ h2 {
     text-align: center;
     font-size: 1.2rem; } }
 
+@media (max-width: 52rem) {
+  .grid-conteiner {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; }
+  .descrip {
+    margin: 2rem 0; }
+  .text {
+    display: inline-block; }
+  .bio {
+    text-align: center; }
+  .my-img {
+    margin: 0 auto; } }
+
 @media (max-width: 40rem) {
   h1.lg-heading {
     font-size: 5rem;
     line-height: 4rem; }
   #work-conteiner {
-    grid-gap: 1rem; } }
-
-@media (max-width: 32rem) {
-  h1.lg-heading {
-    font-size: 4.5rem;
-    line-height: 4rem;
-    margin-bottom: 0.5rem; }
-  main#home {
-    padding: 0;
-    top: 12rem;
-    text-align: center; }
+    grid-gap: 1rem; }
+  .menu-photo img:hover {
+    width: 200px;
+    height: 200px; }
   ul.menu-nav,
   div.menu-photo {
     float: none;
@@ -383,6 +384,16 @@ h2 {
       display: inline-block; }
   .contact_me {
     min-width: 18rem; } }
+
+@media (max-width: 32rem) {
+  h1.lg-heading {
+    font-size: 4.5rem;
+    line-height: 4rem;
+    margin-bottom: 0.5rem; }
+  main#home {
+    padding: 0;
+    top: 12rem;
+    text-align: center; } }
 
 @media (max-width: 28rem) {
   #about h1.lg-heading {
