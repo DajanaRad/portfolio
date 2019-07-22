@@ -22,6 +22,7 @@ if (uHost !== null) {
 }
 
 //set initial state of menu
+
 let showMenu = false;
 
 function toggleMenu(e) {
@@ -38,6 +39,7 @@ function toggleMenu(e) {
     }
 
     //set menu state
+
     showMenu = true;
   } else {
     menuHamburger.classList.remove("close");
