@@ -140,6 +140,9 @@ h2 {
 .second {
   grid-area: first;
   font-size: 1.3rem;
+  p {
+    padding: 0 1rem;
+  }
 }
 .third {
   grid-area: third;
